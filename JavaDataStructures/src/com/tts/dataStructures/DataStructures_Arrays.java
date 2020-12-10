@@ -16,13 +16,12 @@ import java.util.*;
  *@author Nelson T. Sherman
  *Date: 12/7/2020
  */
-
 public class DataStructures_Arrays {
 
-//method
+//class and method
 	public static class dataArrays {
 		
-		public static int toPower(int size, int power) {
+		public static void toPower(int size, int power) {
 			
 			// Declaring and defining an int array 
 	       int myArr[] = new int[size]; 
@@ -39,65 +38,68 @@ public class DataStructures_Arrays {
 	            results = myArr[i];
 	            // Printing the values 
 	            System.out.print(myArr[i] +" "); 
-	        }
-	        
-	        return results;
+	        }       
 	       			 
 		}
 	}
-
+		
 	public static void main(String[] args) {
 		
 		
 		Scanner s = new Scanner(System.in);
 		
 // Write a program to sum all the values of a given Array in Java.		
-		//Variables
-		int sum=0, i;
+			//Variables
+			int sum=0, i;
 		
-		//create an Array of numbers
-		int[] mathArray ={2, 6, 3, 7,10};
+			//create an Array of numbers
+			int[] mathArray ={2, 6, 3, 7,10};
 		
-		//loop the Array to find the sum
-		for(i=0; i< mathArray.length; i++)
-		{
-			sum += mathArray[i];
-		}
+			//loop the Array to find the sum
+			for(i=0; i< mathArray.length; i++)
+			{
+				sum += mathArray[i];
+			}
 		
-		System.out.println("The sum of the numbers in the Array is: " +sum +"\n");
+			System.out.println("The sum of the numbers in the Array is: " +sum +"\n");
+			
+			
 
 /*
 //What is the output?
-        double[ ] exampleArray = {1,5,6,5,4,1};
+        	double[ ] exampleArray = {1,5,6,5,4,1};
 
-        double maximum = examplesArray[0];
+        	double maximum = examplesArray[0];
 
-        int index = 0;
+        	int index = 0;
 
-        for (int i = 1; i<exampleArray.length>; i++){
+        	for (int i = 1; i<exampleArray.length>; i++){
 
              if (exampleArray[ i ] > maximum) {
 
                   maximum = exampleArray[ i ];
 
                   index = i;
-             }
-        }
+             	}
+        	}
 
-        System.out.println(index);
+       		System.out.println(index);
 */		
        System.out.println("the ANSWER to ques #2, output cannot be reached, there is an error in the way the code is written. \n");
 	
 		
+       
+       
 		
 //calling method to return and array size and raised to the value of power
 		
-		//Variables
-		
-		double results;
+			//Variables
+		int size = 4;
+		int power = 2;
 		
 		 
-		System.out.println(dataArrays.toPower(4,2));
+		System.out.print("The values of an Array of "+size +"raised to the power of " +power +" are: " );
+		dataArrays.toPower(size,power);		
         
 	}
 
